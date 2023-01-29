@@ -1,10 +1,3 @@
-
-
-#Girilen notların duruma göre yuvarlanması
-#eğer sayımız 37 'dün küçük ise karışılmayacak
-#5 'e göre modu 0 'a eşit ise karışılmayacak
-#5 'e göre modu 2 'den büyük ise 5 'in katına tamamlanacak
-
 def hesapla():
     notlar = [35,55,69]
 

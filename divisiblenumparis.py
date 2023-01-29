@@ -1,11 +1,3 @@
-#verilen dizideki elemanların toplamı istenilen sayıya bölünebilecek ya da katlarına bölünebilecek
-
-# n ar dizisinin uzunluğu
-# ar[n] = bir dizi tamsayı
-# k = bölen
-
-
-
 def divisibleSumPairs(n, k, ar):
     
     divisible = 0

@@ -1,5 +1,3 @@
-# year: bize verilen yıl
-
 def dayofprogrammer(year):
     january = 31
     march = 31
@@ -54,6 +52,5 @@ def dayofprogrammer(year):
     else:
         return str(day) + "." + str(month) + "." + str(year)
 
-print(dayofprogrammer(1918))
-# 1700, 1800, 1900, 1918       
+print(dayofprogrammer(1918))     
     

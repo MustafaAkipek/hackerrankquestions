@@ -1,8 +1,3 @@
-# bir dizi de elemanlar veriliyor ve pozitif, negatif, nötr sayılardan kaç tane var ise ayrı ayrı hesaplıyoruz
-# sonrasında ise toplam eleman sayısına bölüyoruz, ama virgülden sonra 6 basamak olmalı
-
-# arr bize verilen dizi
-
 a = [1, 1, 0, -1, -1]
 
 def plusMinus(a):

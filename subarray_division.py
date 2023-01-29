@@ -1,12 +1,3 @@
-# bir çikolata var ve her karenin üzerinde ise bir tam sayı var
-# parçaların uzunluğu Ron' un doğum ayıyla eşleşir
-# karelerdeki tam sayıların toplamı ise doğum gününe eşittir
-
-# s: her çikolata karesinin üstündeki sayılar
-# d: Ron 'un doğum günü
-# m: Ron 'un doğduğu ay
-
-
 def subarray_division(s, d, m):
     i = 0
     j = m

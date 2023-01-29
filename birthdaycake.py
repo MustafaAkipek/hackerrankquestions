@@ -14,6 +14,3 @@ for i in range(len(candle)):
         continue
             
 print(result)
-            
-            
-#en büyük sayının aynısından kaç tane olduğunu bulan kod

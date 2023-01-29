@@ -1,7 +1,7 @@
-n = 10 #son satırdaki sharp saysısı
+n = 10 
 
-i = 1 #sharp sayısı
-j = n-1 #boşluk sayısı
+i = 1 
+j = n-1 
 while(i <= n):
     print(" "*(j)+i*"#")
     i += 1

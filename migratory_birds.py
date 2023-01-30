@@ -8,6 +8,4 @@ def migratoryBirds(arr):
     
     return nlist.index(max(nlist))
     
-   
 print(migratoryBirds(arr=[1, 1, 2, 2, 3]))
-

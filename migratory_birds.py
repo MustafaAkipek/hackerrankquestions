@@ -1,5 +1,13 @@
+from collections import Counter
 
 def migratoryBirds(arr):
-    pass
-migratoryBirds(arr=[1, 2, 2])
+    nlist = [0] * len(arr)
+   
+    for i in range(len(arr)):
+        nlist[arr[i]] += 1
+    
+    return nlist.index(max(nlist))
+    
+   
+print(migratoryBirds(arr=[1, 1, 2, 2, 3]))
 

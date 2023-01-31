@@ -1,7 +1,7 @@
 from collections import Counter
 
 def pickingNumbers(a):
-    newarr = Counter(a)
+    newarr = Counter(a) #{1: 2, 2: 2, 3: 1}
     maxnumber = 0
     
     for i in range(100):
@@ -21,4 +21,4 @@ def pickingNumbers(a):
                 count = current
     return count
 """
-print(pickingNumbers([1, 2, 2, 3, 1, 2]))    
+print(pickingNumbers([1, 2, 2, 3, 1]))    

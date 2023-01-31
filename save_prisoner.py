@@ -4,6 +4,6 @@ def saveTheProisoner(n, m, s):
     while m != 0: 
         s += 1  
         m -= 1  
-    print(liste[s-2])   
+    return (liste[s-2])   
     
-saveTheProisoner(3, 7, 3)
+print(saveTheProisoner(3, 7, 3))

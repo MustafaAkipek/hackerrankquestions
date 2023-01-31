@@ -15,6 +15,6 @@ def countingValleys(steps, path):
             level-=1
     
             
-    print (valleys)
+    return (valleys)
 
-countingValleys(8, "UDDDUDUU")
+print(countingValleys(8, "UDDDUDUU"))

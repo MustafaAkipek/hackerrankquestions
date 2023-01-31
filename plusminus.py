@@ -19,7 +19,5 @@ def plusMinus(a):
        
     return f"{positiveration:.6f}\n{negativeration:.6f}\n{zeroration:.6f}"
     
-            
-
 
 print(plusMinus(a))

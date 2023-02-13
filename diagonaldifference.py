@@ -11,3 +11,7 @@ def diagonalDifference(arr):
         rightflank += arr[i][n-1-i]
         
     return abs(leftflank - rightflank)
+
+print(diagonalDifference([[1,2,3],
+                          [4,5,6],
+                          [9,8,9]]))

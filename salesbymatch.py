@@ -4,7 +4,7 @@
 from collections import Counter
 
 def sockMerchant(n, ar):
-    narr = Counter(ar)
+    narr = Counter(ar) # ({10: 4, 20: 3, 30: 1, 50: 1})
     pair = 0
     
     for i in range(101):

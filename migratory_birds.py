@@ -1,5 +1,3 @@
-from collections import Counter
-
 def migratoryBirds(arr):
     nlist = [0] * len(arr)
    

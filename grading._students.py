@@ -1,9 +1,13 @@
-def hesapla():
-    notlar = [35,55,69]
+# int[n]: the grades after rounding as appropriate
 
-    for i in range(len(notlar)):
-        if notlar[i] > 37 and notlar[i] % 5 != 0 and (notlar[i] % 5) > 2:
-            notlar[i] += 5 - (notlar[i] % 5)
-    return notlar
+def gradingStudents(grades):
+    nresult = []
+    
+    for i in grades:
+        if i > 37 and (i % 5) > 2:
+            i += 5 - (i % 5)
+        nresult.append(i)
 
-print(hesapla())
+    return nresult   
+ 
+print(gradingStudents([73, 67, 38, 33]))

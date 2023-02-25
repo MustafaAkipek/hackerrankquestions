@@ -1,5 +1,3 @@
-a = [1, 1, 0, -1, -1]
-
 def plusMinus(a):
     presult = 0
     nresult = 0
@@ -19,5 +17,4 @@ def plusMinus(a):
        
     return f"{positiveration:.6f}\n{negativeration:.6f}\n{zeroration:.6f}"
     
-
-print(plusMinus(a))
+print(plusMinus([1, 1, 0, -1, -1]))

@@ -4,14 +4,13 @@
 
 def subarray_division(s, d, m):
     i = 0
-    j = m
     dw = 0
     
-    while j <= len(s):
-        if sum(s[i:j]) == d:
+    while m <= len(s):
+        if sum(s[i:m]) == d:
             dw += 1
         i += 1
-        j += 1
+        m += 1
     
     return dw
  

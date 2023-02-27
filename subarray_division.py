@@ -1,6 +1,6 @@
 # int s[n] = the numbers on each of the squares of chocolate
 # int d: Ron's birth day
-# int m: Ron2s birth month
+# int m: Ron's birth month
 
 def subarray_division(s, d, m):
     i = 0

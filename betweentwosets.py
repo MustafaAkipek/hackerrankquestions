@@ -5,8 +5,9 @@ def getTotal(a, b):
    alist = []
    blist = []
    unionl = []
-   maxlen = len(a+b)
    common = []
+   maxlen = len(a+b)
+   
    for i in range(len(a)):
       start = 0
       while start < min(b):

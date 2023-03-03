@@ -1,4 +1,4 @@
-arr = [1,2,3,4,5]
+# arr: an array of 5 integers
 
 def miniMaxSum(arr):
     sum = 0
@@ -11,6 +11,4 @@ def miniMaxSum(arr):
         
     print(min(result), max(result))
     
-miniMaxSum(arr)
-        
-        
+miniMaxSum([1,3,5,7,9])  

@@ -1,16 +1,11 @@
-candles = [5,5,5,5,7]
-candle = []
-max_candle = 0
-result = 0
-for i in range(len(candles)):
-    candle.append(candles[i])
+# int candles[n]: the candle that are tallest
+
+def birthdayCakeCandles(candles):
+    tallestcandle = 0
+    x = max(candles)
     
-max_candle = max(candle)
-    
-for i in range(len(candle)):
-    if max_candle == candle[i]:
-        result += 1
-    else:
-        continue
+    for i in candles:
+        if i == x:
+            tallestcandle += 1
             
-print(result)
+    return tallestcandle

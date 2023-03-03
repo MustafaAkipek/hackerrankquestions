@@ -1,3 +1,6 @@
+# int a[3]: Alice's challenge rating
+# int b[3]: Bob's challenge rating
+
 def compareTriplets(a, b):
     timer_a = 0
     timer_b = 0

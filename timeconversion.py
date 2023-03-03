@@ -6,7 +6,6 @@ def timeconversion(s):
     if s[-2:] == "PM" and int(time[0]) < 12:
         time[0] = str(int(time[0]) + 12)
     
-    
     if s[-2:] == "AM" and int(time[0]) > 12:
         time[0] = str(int(time[0]) - 12)
         

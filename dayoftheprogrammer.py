@@ -1,3 +1,5 @@
+# year: an integer
+
 def dayofprogrammer(year):
     january = 31
     march = 31

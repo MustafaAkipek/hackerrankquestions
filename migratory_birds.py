@@ -1,3 +1,5 @@
+# int arr[n]: the types of birds sighted
+
 def migratoryBirds(arr):
     nlist = [0] * len(arr)
     

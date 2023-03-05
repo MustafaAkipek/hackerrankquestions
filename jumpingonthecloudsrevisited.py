@@ -2,13 +2,29 @@
 # int k: the length of one jump
 
 def jumpingOnClouds(c, k):
-    path = 0
-    for i in range(0, len(c), k):
-        if i < len(c):
-            path += 1
-            if c[i] == 1:
-                path += 2
+    energy = 100
+    i = 0
+    over = True
+    
+    while(over):
+        i += k
+        
+        if(i<len(c)):
+            if(c[i] == 0):
+                energy -= 1
+            else:
+                energy -= 3
                 
-    return 100-path
+        else:
+            i = i % len(c)
+            if(c[i] == 0):
+                energy -= 1
+            else:
+                energy -= 3
+                
+        if(i == 0):
+            over = False
+        
+    return energy
 
-print(jumpingOnClouds([1 ,1 ,1 ,0 ,1 ,1 ,0 ,0 ,0 ,0],3))
+print(jumpingOnClouds([1, 1, 1, 0, 1, 1, 0, 0, 0, 0],3))

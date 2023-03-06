@@ -5,12 +5,11 @@ def findDigits(n):
     l = (len(str(n)))
     
     for i in range(int(l)):
-        
         n = str(n)
         if int(n[i]) != 0:
             if int(n) % int(n[i]) == 0:
                 timer += 1
-            
+        
     return timer
     
 print(findDigits(124))

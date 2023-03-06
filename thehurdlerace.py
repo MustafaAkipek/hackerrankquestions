@@ -3,7 +3,7 @@
 
 def hurdleRace(k, height):
     peak = max(height)
-    if k > peak:
+    if k >= peak:
         return 0
     else:
         return peak - k

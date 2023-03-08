@@ -1,3 +1,6 @@
+# int k: the threshold number of students
+# int a[n]: the arrival times of the n students
+
 def angryProfessor(k, a):
     on_time = 0
     for i in a:
@@ -11,5 +14,4 @@ def angryProfessor(k, a):
     else:
         return "YES"
     
-a = angryProfessor(3, [5,8,2,0,-1])
-print(a)
+print(angryProfessor(3, [5,8,2,0,-1]))

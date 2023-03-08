@@ -1,3 +1,7 @@
+# int keyboards[n]: the keyboard prices
+# int drives[m]: the drive prices
+# int b: the budget
+
 def getMoneySpent(keyboards, drives, b):
     makspend = []
     for i in range(len(keyboards)):
@@ -15,5 +19,4 @@ def getMoneySpent(keyboards, drives, b):
     else:
         return -1       
         
-
 print(getMoneySpent([40,50,60], [5,10,12], 60))

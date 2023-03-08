@@ -1,3 +1,7 @@
+# int x: Cat A's position
+# int y: Cat B's position
+# int z: Mouse C's position
+
 def catAndMosue(x,y,z):
     if abs(x-z) < abs(y-z):
         return ("Cat A")

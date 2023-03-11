@@ -1,16 +1,20 @@
 # int a: the lower range boundary
 # int b: the upper range boundary
 
-import math
-
-
 def squares(a, b):
-    count = 0
-    for i in range(a, b+1):
-        a = math.sqrt(i)
-        b = int(a)
-        if abs(len(str(b)) - len(str(a))) == 2:
-            count += 1
+    pass
 
-    return count
 print(squares(24,49))
+
+# my solution but not support time limit exceeded
+"""
+    i = 0
+    count = 0
+    
+    while(i < b):
+        i += 1
+        if i*i >= a and i*i <= b:
+            count += 1
+            
+    return count
+"""

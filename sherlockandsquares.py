@@ -1,8 +1,10 @@
 # int a: the lower range boundary
 # int b: the upper range boundary
 
+import math
+
 def squares(a, b):
-    pass
+    return math.floor(math.sqrt(b)) - math.ceil(math.sqrt(a)) + 1
 
 print(squares(24,49))
 

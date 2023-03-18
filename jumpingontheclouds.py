@@ -3,14 +3,8 @@
 def jumpingOnClouds(c):
     jump = 0
     i = 0
-    over = True
     
-    while(over):
-        if len(c) == 2:
-            i += 1
-            jump += 1
-            break
-            
+    while(len(c) - i > 2):
         if c[i+1] == 1:
             i += 2
             jump += 1
@@ -23,14 +17,10 @@ def jumpingOnClouds(c):
             i += 2
             jump += 1
             
-        if len(c) - i == 2:
-            i += 1
-            jump += 1
-            over = False
-            
-        if i == len(c) -1:
-            over = False
-
-    return jump
+    if i == len(c) - 1:
+        return jump
+    else:
+        jump += 1
+        return jump
             
 print(jumpingOnClouds([0,0,1,0,0,1,0]))

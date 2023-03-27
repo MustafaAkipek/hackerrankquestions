@@ -10,15 +10,6 @@ def encryption(s):
             
     row = math.floor(math.sqrt(len(text)))
     column = math.ceil(math.sqrt(len(text)))
-    
-    matris= empty_2d_list = [[] for _ in range(row)]
-    
-    m = 0
-    
-    while():
-        matris[m].append(text[i])
-        if m
-    print(matris) 
-    
-    
+    return None
+
 print(encryption("haveaniceday"))

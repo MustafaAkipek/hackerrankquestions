@@ -3,13 +3,19 @@
 import math
 
 def encryption(s):
-    text = []
-    for i in range(len(s)):
-        if s[i] != " ":
-            text.append(s[i])
-            
-    row = math.floor(math.sqrt(len(text)))
-    column = math.ceil(math.sqrt(len(text)))
-    return None
+    l = len(s)
+    f = math.floor(math.sqrt(l))
+    c = math.ceil(math.sqrt(l))
+    result = []
 
-print(encryption("haveaniceday"))
+    for i in range(c):
+        text = []
+        j = 0
+        while (i+j) < l:
+            text.append(s[i+j])
+            j += c
+        result.append("".join(text))
+
+    return " ".join(result)
+
+print(encryption("feedthedog"))

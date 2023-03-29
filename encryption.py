@@ -12,10 +12,11 @@ def encryption(s):
         text = []
         j = 0
         while (i+j) < l:
-            text.append(s[i+j])
+            if s[i+j] != " ":
+                text.append(s[i+j])
             j += c
         result.append("".join(text))
 
     return " ".join(result)
 
-print(encryption("feedthedog"))
+print(encryption("feedthedog  "))

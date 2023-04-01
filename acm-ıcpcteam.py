@@ -1,6 +1,5 @@
 # string topic: a string of binary digits
 
-
 def acmTeam(topic):
     maxk = []
     gek = list(topic)
@@ -13,7 +12,7 @@ def acmTeam(topic):
                 else:
                     if topic[j][k] == "1":
                         t += 1
-                        
+
             maxk.append(t)
     
     maxkc = max(maxk)

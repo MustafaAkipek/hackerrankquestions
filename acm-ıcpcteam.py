@@ -3,7 +3,7 @@
 def acmTeam(topic):
     maxk = []
     gek = list(topic)
-    for i in range(len(topic[0])-1):
+    for i in range(len(gek)):
         for j in range(i+1,len(gek)):
             t = 0
             for k in range(len(topic[i])):

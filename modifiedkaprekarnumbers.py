@@ -4,27 +4,20 @@
 import math
 
 def kaprekarNumbers(p, q):
-    kaprekarn = []
+    res = []
 
-    for i in range(p, q):
-        li = len(str(i))
-        i = i ** 2
+    for i in range(p, q+1):
+        sqr = str(i ** 2)
+        n = len(sqr)
 
-        
-        if len(str(i)) == 1:
-            if i ** 2 == i:
-                print(i, end=" ")
+        if i == 1:
+            res.append(i)
+        elif n > 1 and i == int(sqr[:n//2]) + int(sqr[n//2:]):
+            res.append(i)
 
-        elif len(str(math.sqrt(i))) % 2 != 1:
-            stri = str(i)
-            first = stri[:li]
-            second = stri[li:]
-
-            fn = int(first)
-            sn = int(second)
-
-            si = math.sqrt(i)
-            if fn + sn == int(si):
-                print(int(si), end= " ")
+    if len(res) == 0:
+        print("INVALID RANGE")
+    else:
+        print(*res)
 
 kaprekarNumbers(1, 100)

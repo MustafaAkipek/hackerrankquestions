@@ -7,10 +7,10 @@ def chocolateFeast(n, c, m):
     wrapper = chocolate
 
     while(wrapper >= m):
+        wrapper -= m
         chocolate += 1
         wrapper += 1
-        wrapper -= m
-
+        
     return chocolate
     
 print(chocolateFeast(15, 3, 2))

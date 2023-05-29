@@ -3,29 +3,17 @@
 # int arr[n]: the number of problems in each chapter
 
 def workbook(n, k, arr):
-    chapter = 1
-    page = 1
     special = 0
-    question = 0
-    loop = 0
+    page = 1
 
-    for i in range(n):
-        while(arr[i] > 0):
-            arr[i] -= 1
-            question += 1
-            loop += 1
-            if question == page:
+    for quesitons in arr:
+        for index in range(1, quesitons+1):
+            if index == page:
                 special += 1
-            elif loop == k:
+
+            if index == quesitons or index % k == 0:
                 page += 1
-                loop = 0
-        else:
-            question = 0
-            chapter += 1
-            page += 1
-            loop = 0
 
     return special
-
 
 print(workbook(5, 3, [4,2,6,1,10]))
